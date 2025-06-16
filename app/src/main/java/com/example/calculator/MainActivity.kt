@@ -44,10 +44,28 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         btnAdd.setOnClickListener{
-            var  num1 =etNum1.text.toString()
-            var num2 =etNum2.text.toString()
+            var  num1 = etNum1.text.toString()
+            var num2 = etNum2.text.toString()
             var sum = num1.toInt() + num2.toInt()
             tvResult.text = sum.toString()
+        }
+        btnSubstract.setOnClickListener{
+            var  num1 =etNum1.text.toString()
+            var num2 =etNum2.text.toString()
+            var result = num1.toInt() - num2.toInt()
+            tvResult.text = result.toString()
+        }
+        btnMultiply.setOnClickListener{
+            var  num1 = etNum1.text.toString()
+            var num2 = etNum2.text.toString()
+            var product = num1.toInt() * num2.toInt()
+            tvResult.text = product.toString()
+        }
+        btnDivide.setOnClickListener{
+            var  num1 =etNum1.text.toString()
+            var num2 =etNum2.text.toString()
+            var quotient = num1.toInt() / num2.toInt()
+            tvResult.text = quotient.toString()
         }
     }
 }
