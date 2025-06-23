@@ -70,7 +70,7 @@
         android:id="@+id/btnMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*"
+        android:text="X"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnSubstract"
